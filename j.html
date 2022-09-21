@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button>Click me</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ducimus, labore id eaque debitis quas laborum veritatis voluptas tenetur voluptatum. Totam voluptate culpa consectetur obcaecati sit rerum aspernatur, harum modi!</p>
+    <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, amet! Quam beatae ab eligendi, quaerat explicabo voluptas eaque libero delectus nobis? Esse voluptatem dolor consequatur maiores facilis, enim accusantium neque.</p>
+
+    <h1>hi how are you</h1>
+    <ul>
+        <li>one</li>
+        <li>second</li>
+        <li>third</li>
+
+    </ul>
+
+    <ul>
+        <li>one-x</li>
+        <li>second-x</li>
+        <li>third-x</li>
+
+    </ul>
+    <input type="button" value="Input Button">
+    <a href="#">Click This</a>
+    <a href="#" target="_blank">I am blank link</a>
+    <table>
+        <tr>
+            <td>one</td>
+            <td>second</td>
+            <td>three</td>
+
+        </tr>
+        <tr>
+            <td>one</td>
+            <td>second</td>
+            <td>three</td>
+
+        </tr>
+        <tr>
+            <td>one</td>
+            <td>second</td>
+            <td>three</td>
+
+        </tr>
+    </table>
+
+
+    <p id="p1">First one Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum dicta perspiciatis odit harum esse inventore quo, sed praesentium rem aliquam commodi sapiente labore delectus non, doloribus, laboriosam enim tempora autem.</p>
+    <p id="p2">Second one Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, ab iste. Officiis, velit accusantium sapiente itaque reiciendis architecto aliquid earum! Enim impedit quidem suscipit dicta esse maxime amet iusto repellendus!</p>
+    <p id="p3">Third One Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ut fugit temporibus unde voluptatibus placeat repudiandae quod architecto laboriosam illo dolore, dolorum, nulla odio esse iure doloribus totam quaerat consequatur!</p>
+
+
+
+    <h2>Hover me</h2>
+</body>
+<script src="./js.js"></script>
+
+<script>
+    $(document).ready(function(){
+       
+
+
+       
+
+
+$('#p1').mouseenter(function(){
+    alert('You entered the first paragraph')
+})
+$('#p1').mouseleave(function(){
+    alert('You left the first paragraph')
+})
+$('#p3').mouseenter(function(){
+    $(this).hide()
+    alert('You entered the Third paragraph')
+})
+
+
+$('h2').hover(function(){
+    alert('Hi! You Entered Header two')
+},
+function(){
+    alert('Bye! You left Header two')
+}
+
+)
+
+    })
+</script>
+</html>
